@@ -27,11 +27,11 @@ feign:
 
 elsie-deetect:
   ribbon:
-    listOfServers: http://localhost:8080
+    listOfServers: http://elsie-deetect:8080
 
 ribbon:
   eureka:
-   enabled: true
+   enabled: false
 
 endpoints:
   refresh:
