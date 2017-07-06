@@ -25,7 +25,7 @@ feign:
     response:
       enabled: true
 
-elsie-deesight:
+face-classifier:
   ribbon:
     listOfServers: http://face-classifier:8084
 
