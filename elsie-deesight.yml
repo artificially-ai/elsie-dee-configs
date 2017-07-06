@@ -1,0 +1,40 @@
+server:
+  port: 8085
+  context-path: /elsie-deesight
+
+spring:
+  application:
+    name: elsie-deesight
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_ADVERTISED_HOST_NAME:eureka-service}:8083/eureka/
+    healthcheck:
+      enabled: true
+
+management:
+  security:
+    enabled: false
+
+feign:
+  compression:
+    request:
+      enabled: true
+    mime-types: application/json
+    response:
+      enabled: true
+
+elsie-deesight:
+  ribbon:
+    listOfServers: http://face-classifier:8084
+
+ribbon:
+  eureka:
+   enabled: false
+
+endpoints:
+  refresh:
+    enabled: true
+  restart:
+    enabled: true
