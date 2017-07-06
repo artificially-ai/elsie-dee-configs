@@ -21,13 +21,17 @@ feign:
   compression:
     request:
       enabled: true
-    mime-types: application/json
+    mime-types: application/json, application/octet-stream
     response:
       enabled: true
 
 elsie-deetect:
   ribbon:
     listOfServers: http://elsie-deetect:8080
+
+elsie-deesight:
+  ribbon:
+    listOfServers: http://elsie-deesight:8085
 
 ribbon:
   eureka:
