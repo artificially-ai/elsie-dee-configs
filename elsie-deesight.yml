@@ -32,6 +32,8 @@ face-classifier:
 ribbon:
   eureka:
    enabled: false
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
 
 endpoints:
   refresh:
