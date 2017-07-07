@@ -28,10 +28,14 @@ feign:
 elsie-deetect:
   ribbon:
     listOfServers: http://elsie-deetect:8080
+  ConnectTimeout: 10000
+  ReadTimeout: 60000
 
 elsie-deesight:
   ribbon:
     listOfServers: http://elsie-deesight:8085
+  ConnectTimeout: 10000
+  ReadTimeout: 60000
 
 ribbon:
   eureka:
