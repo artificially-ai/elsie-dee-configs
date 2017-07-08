@@ -21,7 +21,7 @@ feign:
   compression:
     request:
       enabled: true
-    mime-types: application/json, application/octet-stream
+    mime-types: application/json, application/octet-stream, image/png
     response:
       enabled: true
 
