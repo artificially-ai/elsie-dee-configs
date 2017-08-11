@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${ELSIE_DEETECT_PORT:8080}
   context-path: /elsie-deetect
 
 endpoints:
@@ -11,7 +11,7 @@ endpoints:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://${EUREKA_ADVERTISED_HOST_NAME:eureka-service}:8083/eureka/
+      defaultZone: http://${EUREKA_SERVICE_HOST_NAME:eureka-service}:${EUREKA_SERVICE_PORT:8083}/eureka/
     healthcheck:
       enabled: true
 

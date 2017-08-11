@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: ${ELSIE_DEESIGHT_PORT:8085}
   context-path: /elsie-deesight
 
 spring:
@@ -9,7 +9,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://${EUREKA_ADVERTISED_HOST_NAME:eureka-service}:8083/eureka/
+      defaultZone: http://${EUREKA_SERVICE_HOST_NAME:eureka-service}:${EUREKA_SERVICE_PORT:8083}/eureka/
     healthcheck:
       enabled: true
 
