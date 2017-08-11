@@ -1,0 +1,24 @@
+server:
+  port: ${ELSIE_DEE_AUDIORIP_PORT:8086}
+  context-path: /elsie-dee-audiorip
+
+spring:
+  application:
+    name: elsie-dee-audiorip
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_SERVICE_HOST_NAME:eureka-service}:${EUREKA_SERVICE_PORT:8083}/eureka/
+    healthcheck:
+      enabled: true
+
+management:
+  security:
+    enabled: false
+
+endpoints:
+  refresh:
+    enabled: true
+  restart:
+    enabled: true
