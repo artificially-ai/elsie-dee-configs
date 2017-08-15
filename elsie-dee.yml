@@ -5,8 +5,8 @@ server:
 spring:
   http:
     multipart:
-      max-request-size: 50MB
-      max-file-size: 50MB
+      max-request-size: 100MB
+      max-file-size: 100MB
 
 eureka:
   client:
@@ -23,7 +23,7 @@ feign:
   compression:
     request:
       enabled: true
-    mime-types: application/json, application/octet-stream, image/png
+    mime-types: application/json, application/octet-stream, image/png, video/mp4
     response:
       enabled: true
 
