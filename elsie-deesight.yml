@@ -3,8 +3,9 @@ server:
   context-path: /elsie-deesight
 
 spring:
-  application:
-    name: elsie-deesight
+  http:
+      multipart:
+        max-request-size: 50Mb
 
 eureka:
   client:

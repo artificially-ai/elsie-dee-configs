@@ -3,8 +3,9 @@ server:
   context-path: /elsie-dee-audiorip
 
 spring:
-  application:
-    name: elsie-dee-audiorip
+  http:
+    multipart:
+      max-request-size: 50Mb
 
 eureka:
   client:
