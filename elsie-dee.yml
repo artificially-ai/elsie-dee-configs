@@ -5,7 +5,8 @@ server:
 spring:
   http:
     multipart:
-      max-request-size: 50Mb
+      max-request-size: 50MB
+      max-file-size: 50MB
 
 eureka:
   client:
