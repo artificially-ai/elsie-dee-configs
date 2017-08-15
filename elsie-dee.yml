@@ -37,6 +37,12 @@ elsie-deesight:
   ConnectTimeout: 10000
   ReadTimeout: 60000
 
+elsie-dee-audiorip:
+  ribbon:
+    listOfServers: http://elsie-dee-audiorip:8086
+  ConnectTimeout: 10000
+  ReadTimeout: 60000
+
 ribbon:
   eureka:
    enabled: false
