@@ -1,0 +1,26 @@
+server:
+  port: ${ELSIE_DEE_SEARCH_PORT:8087}
+  context-path: /elsie-dee-search
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_SERVICE_HOST_NAME:eureka-service}:${EUREKA_SERVICE_PORT:8083}/eureka/
+    healthcheck:
+      enabled: true
+
+management:
+  security:
+    enabled: false
+
+endpoints:
+  refresh:
+    enabled: true
+  restart:
+    enabled: true
+
+elsie-dee:
+  elasticsearch:
+    cluster-name: elastic-custer
+    host: elasticsearch
+    port: 9300
