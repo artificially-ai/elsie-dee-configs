@@ -2,6 +2,12 @@ server:
   port: ${ELSIE_DEE_SEARCH_PORT:8087}
   context-path: /elsie-dee-search
 
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elastic-cluster
+      cluster-nodes: elasticsearch:9300
+
 eureka:
   client:
     serviceUrl:
@@ -18,9 +24,3 @@ endpoints:
     enabled: true
   restart:
     enabled: true
-
-elsie-dee:
-  elasticsearch:
-    cluster-name: elastic-custer
-    host: elasticsearch
-    port: 9300
