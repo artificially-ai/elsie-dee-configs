@@ -5,10 +5,7 @@ server:
 spring:
   data:
     elasticsearch:
-      cluster-name: elastic-cluster
       cluster-nodes: elsie-dee-elastic-1:9300
-      properties:
-        client.transport.ignore_cluster_name: true
 
 eureka:
   client:
