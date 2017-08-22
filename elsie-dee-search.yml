@@ -5,7 +5,7 @@ server:
 spring:
   data:
     elasticsearch:
-      cluster-nodes: elsie-dee-elastic-1:9300
+      cluster-nodes: elsie-dee-elastic:9300
 
 eureka:
   client:
