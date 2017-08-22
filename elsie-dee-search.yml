@@ -6,7 +6,7 @@ spring:
   data:
     elasticsearch:
       cluster-name: elastic-cluster
-      cluster-nodes: elasticsearch:9300
+      cluster-nodes: elsie-dee-elastic-1:9300
 
 eureka:
   client:
