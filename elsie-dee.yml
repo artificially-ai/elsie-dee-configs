@@ -23,7 +23,7 @@ feign:
   compression:
     request:
       enabled: true
-    mime-types: application/json, application/octet-stream, image/png, video/mp4
+    mime-types: application/json, application/octet-stream, image/png, video/mp4, video/avi
     response:
       enabled: true
 
@@ -48,6 +48,12 @@ elsie-dee-audiorip:
 elsie-dee-search:
   ribbon:
     listOfServers: http://elsie-dee-search:8087
+  ConnectTimeout: 10000
+  ReadTimeout: 60000
+
+stream-services:
+  ribbon:
+    listOfServers: http://stream-services:8088
   ConnectTimeout: 10000
   ReadTimeout: 60000
 
