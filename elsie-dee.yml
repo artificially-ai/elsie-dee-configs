@@ -54,8 +54,8 @@ elsie-dee-search:
 stream-services:
   ribbon:
     listOfServers: http://stream-services:8088
-  ConnectTimeout: 10000
-  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  ReadTimeout: 100000
 
 ribbon:
   eureka:
