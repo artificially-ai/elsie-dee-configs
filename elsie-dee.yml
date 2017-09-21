@@ -20,6 +20,10 @@ management:
     enabled: false
 
 feign:
+  client:
+    default:
+      ConnectTimeout: 10000
+      ReadTimeout: 60000
   compression:
     request:
       enabled: true
